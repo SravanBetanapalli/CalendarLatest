@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-05T12:34:20 EDT" name="Default suite" finished-at="2021-04-05T12:34:32 EDT" duration-ms="12230">
+    <groups>
+    </groups>
+    <test started-at="2021-04-05T12:34:20 EDT" name="Default test" finished-at="2021-04-05T12:34:32 EDT" duration-ms="12230">
+      <class name="E2EProjectCopy.CalendarAppCopy.LoginValidation">
+        <test-method signature="invokingLoginPage(java.lang.String, java.lang.String)[pri:0, instance:E2EProjectCopy.CalendarAppCopy.LoginValidation@57d7f8ca]" started-at="2021-04-05T12:34:20 EDT" name="invokingLoginPage" data-provider="getdatal" finished-at="2021-04-05T12:34:27 EDT" duration-ms="6596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akhilbingi32]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix@321456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokingLoginPage -->
+        <test-method signature="invokingLoginPage(java.lang.String, java.lang.String)[pri:0, instance:E2EProjectCopy.CalendarAppCopy.LoginValidation@57d7f8ca]" started-at="2021-04-05T12:34:27 EDT" name="invokingLoginPage" data-provider="getdatal" finished-at="2021-04-05T12:34:32 EDT" duration-ms="5429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akhilbingi64@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matrix@32164]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokingLoginPage -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:E2EProjectCopy.CalendarAppCopy.LoginValidation@57d7f8ca]" started-at="2021-04-05T12:34:32 EDT" name="aftertest" finished-at="2021-04-05T12:34:32 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- E2EProjectCopy.CalendarAppCopy.LoginValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
