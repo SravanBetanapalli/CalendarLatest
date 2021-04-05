@@ -5,7 +5,10 @@ package E2EProjectCopy.CalendarAppCopy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
+/**
+ * @author AKHIL BINGI
+ *
+ */
 public class reportsGen {
 	static ExtentReports extent;
 	

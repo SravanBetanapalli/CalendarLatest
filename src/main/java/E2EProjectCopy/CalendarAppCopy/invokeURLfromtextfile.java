@@ -5,7 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-
+/**
+ * @author AKHIL BINGI
+ *
+ */
 
 
 public class invokeURLfromtextfile extends mainClass {

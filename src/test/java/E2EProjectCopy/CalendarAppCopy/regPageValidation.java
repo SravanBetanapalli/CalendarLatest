@@ -24,7 +24,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+/**
+ * @author AKHIL BINGI
+ *
+ */
 
 public class regPageValidation extends mainClass{
 

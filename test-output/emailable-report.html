@@ -8,12 +8,66 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,230</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">9</td><td class="num">70,088</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">E2EProjectCopy.CalendarAppCopy.LoginValidation</td><td><a href="#m0">invokingLoginPage</a></td><td rowspan="2">1617640467081</td><td rowspan="2">5429</td></tr><tr class="passedeven"><td><a href="#m1">invokingLoginPage</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">E2EProjectCopy.CalendarAppCopy.LoginValidation</td><td><a href="#m0">invokingLoginPage</a></td><td rowspan="1">1617665645136</td><td rowspan="1">16392</td></tr><tr class="failedodd"><td rowspan="8">E2EProjectCopy.CalendarAppCopy.regPageValidation</td><td><a href="#m1">invokingRegistrationPage</a></td><td rowspan="8">1617665606855</td><td rowspan="8">3581</td></tr><tr class="failedodd"><td><a href="#m2">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m3">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m4">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m5">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m6">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m7">invokingRegistrationPage</a></td></tr><tr class="failedodd"><td><a href="#m8">invokingRegistrationPage</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">E2EProjectCopy.CalendarAppCopy.LoginValidation</td><td><a href="#m9">invokingLoginPage</a></td><td rowspan="1">1617665635985</td><td rowspan="1">9149</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">E2EProjectCopy.CalendarAppCopy.LoginValidation#invokingLoginPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akhilbingi64@gmail.com</td><td>Matrix@32164</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">E2EProjectCopy.CalendarAppCopy.LoginValidation#invokingLoginPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akhilbingi32</td><td>Matrix@321456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">E2EProjectCopy.CalendarAppCopy.LoginValidation#invokingLoginPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akhilbingi64@gmail.com</td><td>Matrix@32164</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[starts-with(@class,&apos;active&apos;)]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Akhil-Bingi-Macbook.local&apos;, ip: &apos;2607:fa49:2a3f:7c00:0:0:0:d71b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/3z/f2jc2dfn3xx...}, goog:chromeOptions: {debuggerAddress: localhost:57782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56601973335c482e2fae1a09aaf0a0d5
+*** Element info: {Using=xpath, value=//td[starts-with(@class,&apos;active&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at E2EProjectCopy.CalendarAppCopy.loginPage.getCurrDate(loginPage.java:59)
+	at E2EProjectCopy.CalendarAppCopy.LoginValidation.invokingLoginPage(LoginValidation.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi123231@gmai.com</td><td>akhilbiingi</td><td>akhilbingi32</td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi@gmail.com</td><td>akhil bingi</td><td>akhilbingi321</td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi@gmail.com</td><td>aka</td><td></td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi@gmail.com</td><td>&quot;&quot;</td><td>akhilbingi3212</td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi@gmail.com</td><td>akab</td><td>akhilhdiw</td><td>&quot;&quot;</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi@gmail.com</td><td>akhil bingi</td><td>akhilbingi32</td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>akhilbingi64@gmail.com</td><td>bingi64</td><td>akhilbingi64@gmail.com</td><td>Matrix@32164</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">E2EProjectCopy.CalendarAppCopy.regPageValidation#invokingRegistrationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>akabc</td><td>akhilhdingi</td><td>Matrix@321456</td><td>https://www.google.com/</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.AssertionError: The test case failed as the user could not be able to register expected [true] but found [false]
+	at E2EProjectCopy.CalendarAppCopy.regPageValidation.invokingRegistrationPage(regPageValidation.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">E2EProjectCopy.CalendarAppCopy.LoginValidation#invokingLoginPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>akhilbingi32</td><td>Matrix@321456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

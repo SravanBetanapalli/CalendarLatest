@@ -31,7 +31,10 @@ import org.testng.annotations.Test;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.concurrent.TimeUnit;
-
+/**
+ * @author AKHIL BINGI
+ *
+ */
 public class LoginValidation extends mainClass{
 
 	public WebDriver driver;
@@ -56,7 +59,7 @@ public class LoginValidation extends mainClass{
 		data[0][1]="Matrix@321456";
 		
 		
-		data[1][0]="akhilbingi64@gmail.com";
+		data[1][0]="akhilbingi64679@gmail.com";
 		data[1][1]="Matrix@32164";
 		
 		

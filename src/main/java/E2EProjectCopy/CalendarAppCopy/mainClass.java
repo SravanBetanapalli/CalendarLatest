@@ -18,7 +18,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-
+/**
+ * @author AKHIL BINGI
+ *
+ */
 public class mainClass {
 	
 	public WebDriver driver;
