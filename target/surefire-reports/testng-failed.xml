@@ -6,9 +6,15 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
+      <class name="E2EProjectCopy.CalendarAppCopy.LoginValidation">
+        <methods>
+          <include name="aftertest"/>
+          <include name="invokingLoginPage" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- E2EProjectCopy.CalendarAppCopy.LoginValidation -->
       <class name="E2EProjectCopy.CalendarAppCopy.regPageValidation">
         <methods>
-          <include name="invokingRegistrationPage" invocation-numbers="0 1 2 3"/>
+          <include name="invokingRegistrationPage" invocation-numbers="0 6 7"/>
           <include name="aftertest"/>
         </methods>
       </class> <!-- E2EProjectCopy.CalendarAppCopy.regPageValidation -->

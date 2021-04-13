@@ -50,8 +50,10 @@ public class mainClass {
 			//Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
 			//Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
 			
+			//Since my workflow is in the mac i hardcoded this, since the path location varies from os to os 
 			System.setProperty("webdriver.chrome.driver","/Users/bingis/Downloads/chromedriver");
 			ChromeOptions options=new ChromeOptions();
+			//Headless method will not invoke the borwser but execution will be done at the back
 			if(browsername.contains("headless")) 
 			{
 			options.addArguments("headless");
@@ -80,7 +82,7 @@ public class mainClass {
 		
 		
 	}
-
+    //Method to take screenshot when ever there is a failure
 	public String TakingScreenshot(String getTestCasename,WebDriver driver) throws IOException 
 	{
 	 TakesScreenshot ts=(TakesScreenshot)driver;
@@ -88,6 +90,7 @@ public class mainClass {
 	 String DestinationFile=System.getProperty("user.dir")+"/reports/demo.html";
 	 FileUtils.copyFile(source, new File(DestinationFile));
 	 return DestinationFile;
+	 
 	}
 	
 

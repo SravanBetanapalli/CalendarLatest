@@ -15,6 +15,7 @@ public class reportsGen {
 	
 	public static  ExtentReports getReports() 
 	{
+		//Path where reports are generated after the execution of each steps
 		String path =System.getProperty("user.dir")+"/reports/index.html";
 		ExtentSparkReporter repo=new ExtentSparkReporter(path);
 		repo.config().setReportName("Calender create page");

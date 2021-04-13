@@ -61,6 +61,7 @@ public class regPageValidation extends mainClass{
 		reg.getpassword().sendKeys(password);
 		reg.getAvatar().sendKeys(URL);
 		reg.Submit().click();
+		//cust_url is the url of the login user at that instance
 		String cust_url=i.geturl()+"/calendar/"+Username;
         //WebDriverWait wait=new WebDriverWait(driver, 20);
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/section/section/div[1]/h1")));
@@ -68,16 +69,17 @@ public class regPageValidation extends mainClass{
 	
 		String curl_url=driver.getCurrentUrl();
 		
-		
+		//according to functonality the user is logging after functionality so validating the url 
 		Assert.assertTrue(cust_url.equalsIgnoreCase(curl_url), "The test case failed as the user could not be able to register");
 	}//http://localhost:3000/calendar/bingiweq123s
 	
 	@DataProvider
 	public Object[][] getdata() 
 	{
-		
+		//Accesing the excel data from static class TestUtil,Enhanced the code without hardcoding
 		Object[][] data=TestUtil.getTestData("reg");
 		return data;
+		
 		/*Object[][] data=new Object[2][5];
 		data[0][0]="akhilbingi@gmail.com";
 		data[0][1]="akhil bingi";

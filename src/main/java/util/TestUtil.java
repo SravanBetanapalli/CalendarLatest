@@ -22,7 +22,7 @@ public class TestUtil {
 	
 	static Workbook book;
 	static Sheet sheet;
-	
+	//This method is useful for getting the values from excel sheet without hardcoding
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {

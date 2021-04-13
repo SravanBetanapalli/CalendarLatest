@@ -16,6 +16,7 @@ public class registrationPage {
 
     public WebDriver driver;
 	
+    //Data Encapsulation, Declaring variables as private and accessing this web elements through the public methods for security
     private By RegPage=By.linkText("Register Now");
 	private By email=By.xpath("//input[@name='email']");
 	private  By name=By.xpath("//input[@name='name']");
@@ -28,7 +29,7 @@ public class registrationPage {
 
 	
 	
-
+    //Constructor for registrationPage class, so when object is created of this class constructor is invoked automatically
 	public registrationPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
