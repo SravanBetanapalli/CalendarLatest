@@ -32,11 +32,11 @@ public class mainClass {
 		FileInputStream fis=new FileInputStream("/Users/bingis/eclipse-workspace/calenderApp/src/main/java/E2EProject/calenderApp/Data.properties");
 		prop=new Properties();
 		prop.load(fis);
-		String browsername=prop.getProperty("browser");
+		//String browsername=prop.getProperty("browser");
 		
 		//taking the browser value from jenkins jon
 		
-		//String browsername=System.getProperty("browser");
+		String browsername=System.getProperty("browser");
 		System.out.println(browsername);
 		
 		if(browsername.equals("chrome"))
