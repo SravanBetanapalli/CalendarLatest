@@ -6,7 +6,7 @@
       <class name="E2EProjectCopy.CalendarAppCopy.LoginValidation">
         <methods>
           <include name="aftertest"/>
-          <include name="invokingLoginPage"/>
+          <include name="invokingLoginPage" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- E2EProjectCopy.CalendarAppCopy.LoginValidation -->
     </classes>

@@ -29,29 +29,32 @@ public class mainClass {
 	
 	public WebDriver initialize() throws IOException
 	{
-		FileInputStream fis=new FileInputStream("/Users/bingis/eclipse-workspace/calenderApp/src/main/java/E2EProject/calenderApp/Data.properties");
+		
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
+		
 		prop=new Properties();
 		prop.load(fis);
-		//String browsername=prop.getProperty("browser");
+		String browsername=prop.getProperty("browser");
 		
 		//taking the browser value from jenkins jon
 		
-		String browsername=System.getProperty("browser");
+		//String browsername=System.getProperty("browser");
 		System.out.println(browsername);
 		
 		if(browsername.equals("chrome"))
 		{
-			//String path=System.getProperty("user.dir")+"/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver";
+			
+			//String path=System.getProperty("user.dir")+"//src//main//java//E2EProjectCopy//CalendarAppCopy//chromedriver.exe";
 			//System.out.println(path);
 			
 			
 			
 			
-			//Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
-			//Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
+			///Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
 			
 			//Since my workflow is in the mac i hardcoded this, since the path location varies from os to os 
-			System.setProperty("webdriver.chrome.driver","/Users/bingis/Downloads/chromedriver");
+			
+			System.setProperty("webdriver.chrome.driver","/Users/bingis/Downloads/Project/chromedriver");
 			ChromeOptions options=new ChromeOptions();
 			//Headless method will not invoke the borwser but execution will be done at the back
 			if(browsername.contains("headless")) 
