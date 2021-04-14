@@ -27,10 +27,12 @@ public class registrationPage {
 	// class constructor is invoked automatically
 	public registrationPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
+		System.out.println("The reg page constructor is called");
 		this.driver = driver;
 	}
 
 	public WebElement EnterRegPage() {
+
 		return driver.findElement(RegPage);
 
 	}
