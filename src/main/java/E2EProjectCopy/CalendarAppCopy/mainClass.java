@@ -34,7 +34,7 @@ public class mainClass {
 		// taking the browser value from jenkins jon
 		System.out.println(browsername);
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/bingis/Downloads/Project/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			// Headless method will not invoke the browser but execution will be done at the
 			// back
