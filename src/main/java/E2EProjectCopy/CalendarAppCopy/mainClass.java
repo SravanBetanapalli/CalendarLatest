@@ -2,9 +2,6 @@ package E2EProjectCopy.CalendarAppCopy;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FilterInputStream;
-import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -16,86 +13,58 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 /**
  * @author AKHIL BINGI
  *
  */
 public class mainClass {
-	
+
 	public WebDriver driver;
 	public Properties prop;
-	
-	public WebDriver initialize() throws IOException
-	{
-		
-		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
-		
-		prop=new Properties();
-		prop.load(fis);
-		String browsername=prop.getProperty("browser");
-		
-		//taking the browser value from jenkins jon
-		
-		//String browsername=System.getProperty("browser");
-		System.out.println(browsername);
-		
-		if(browsername.equals("chrome"))
-		{
-			
-			//String path=System.getProperty("user.dir")+"//src//main//java//E2EProjectCopy//CalendarAppCopy//chromedriver.exe";
-			//System.out.println(path);
-			
-			
-			
-			
-			///Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver
-			
-			//Since my workflow is in the mac i hardcoded this, since the path location varies from os to os 
-			
-			System.setProperty("webdriver.chrome.driver","/Users/bingis/Downloads/Project/chromedriver");
-			ChromeOptions options=new ChromeOptions();
-			//Headless method will not invoke the borwser but execution will be done at the back
-			if(browsername.contains("headless")) 
-			{
-			options.addArguments("headless");
-			}
-			driver=new ChromeDriver(options);
-			
-			
-		}
-		
-		else if(browsername.equals("firefox"))
-		{
-			///Users/bingis/Downloads/geckodriver
-			//String path=System.getProperty("user.dir")+"/src/main/java/EndtoEnd1/ETEFramework1/geckodriver";
-			System.setProperty("webdriver.gecko.driver","/Users/bingis/Downloads/geckodriver");
-			driver=new FirefoxDriver();
-			
-			
-		}
-		
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		
-		return driver;
-		
-		
-		
-		
-		
-	}
-    //Method to take screenshot when ever there is a failure
-	public String TakingScreenshot(String getTestCasename,WebDriver driver) throws IOException 
-	{
-	 TakesScreenshot ts=(TakesScreenshot)driver;
-	 File source= ts.getScreenshotAs(OutputType.FILE);
-	 String DestinationFile=System.getProperty("user.dir")+"/reports/demo.html";
-	 FileUtils.copyFile(source, new File(DestinationFile));
-	 return DestinationFile;
-	 
-	}
-	
 
-	
+	public WebDriver initialize() throws IOException {
+
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
+
+		prop = new Properties();
+		prop.load(fis);
+		String browsername = prop.getProperty("browser");
+		// taking the browser value from jenkins jon
+		System.out.println(browsername);
+		if (browsername.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "/Users/bingis/Downloads/Project/chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			// Headless method will not invoke the browser but execution will be done at the
+			// back
+			if (browsername.contains("headless")) {
+				options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
+		}
+
+		else if (browsername.equals("firefox")) {
+
+			System.setProperty("webdriver.gecko.driver", "/Users/bingis/Downloads/geckodriver");
+			driver = new FirefoxDriver();
+
+		}
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		return driver;
+
+	}
+
+	// Method to take screenshot when ever there is a failure
+	public String TakingScreenshot(String getTestCasename, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String DestinationFile = System.getProperty("user.dir") + "/reports/demo.html";
+		FileUtils.copyFile(source, new File(DestinationFile));
+		return DestinationFile;
+
+	}
+
 }

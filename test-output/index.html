@@ -104,12 +104,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="E2EProjectCopy.CalendarAppCopy.LoginValidation" class="method navigator-link" hash-for-method="invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)">invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="E2EProjectCopy.CalendarAppCopy.LoginValidation" class="method navigator-link" hash-for-method="invokingLoginPage(akhilbingi32, Matrix@321456)">invokingLoginPage(akhilbingi32, Matrix@321456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="E2EProjectCopy.CalendarAppCopy.LoginValidation" class="method navigator-link" hash-for-method="invokingLoginPage(akhilbingi32, Matrix@321456)">invokingLoginPage(akhilbingi32, Matrix@321456)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="E2EProjectCopy.CalendarAppCopy.LoginValidation" class="method navigator-link" hash-for-method="invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)">invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -132,19 +132,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)">
-                  </a> <!-- invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164) -->
+                  <a name="invokingLoginPage(akhilbingi32, Matrix@321456)">
+                  </a> <!-- invokingLoginPage(akhilbingi32, Matrix@321456) -->
                   <span class="method-name">invokingLoginPage</span>
-                  <span class="parameters">(akhilbingi64679@gmail.com, Matrix@32164)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[starts-with(@class,&apos;active&apos;)]&quot;}
+                  <span class="parameters">(akhilbingi32, Matrix@321456)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Akhil-Bingi-Macbook.local&apos;, ip: &apos;2607:fa49:2a3f:b800:0:0:0:212%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/3z/f2jc2dfn3xx...}, goog:chromeOptions: {debuggerAddress: localhost:59013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e3ac4a6b7997c8b8a29f7428069b239b
-*** Element info: {Using=xpath, value=//td[starts-with(@class,&apos;active&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/3z/f2jc2dfn3xx...}, goog:chromeOptions: {debuggerAddress: localhost:49683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4077143c2256fe3960938bb0e8dfec5
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,12 +154,8 @@ Session ID: e3ac4a6b7997c8b8a29f7428069b239b
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at E2EProjectCopy.CalendarAppCopy.loginPage.getCurrDate(loginPage.java:59)
-	at E2EProjectCopy.CalendarAppCopy.LoginValidation.invokingLoginPage(LoginValidation.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at E2EProjectCopy.CalendarAppCopy.LoginValidation.invokingLoginPage(LoginValidation.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,19 +190,17 @@ Session ID: e3ac4a6b7997c8b8a29f7428069b239b
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="invokingLoginPage(akhilbingi32, Matrix@321456)">
-                  </a> <!-- invokingLoginPage(akhilbingi32, Matrix@321456) -->
+                  <a name="invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)">
+                  </a> <!-- invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164) -->
                   <span class="method-name">invokingLoginPage</span>
-                  <span class="parameters">(akhilbingi32, Matrix@321456)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[starts-with(@class,&apos;active&apos;)]&quot;}
+                  <span class="parameters">(akhilbingi64679@gmail.com, Matrix@32164)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=89.0.4389.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Akhil-Bingi-Macbook.local&apos;, ip: &apos;2607:fa49:2a3f:b800:0:0:0:212%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/3z/f2jc2dfn3xx...}, goog:chromeOptions: {debuggerAddress: localhost:58989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bc7dffe18628372a7a4a36a34587cd4e
-*** Element info: {Using=xpath, value=//td[starts-with(@class,&apos;active&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/3z/f2jc2dfn3xx...}, goog:chromeOptions: {debuggerAddress: localhost:49711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db2681280e70407a01292b25f7aeb431
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -220,12 +212,8 @@ Session ID: bc7dffe18628372a7a4a36a34587cd4e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at E2EProjectCopy.CalendarAppCopy.loginPage.getCurrDate(loginPage.java:59)
-	at E2EProjectCopy.CalendarAppCopy.LoginValidation.invokingLoginPage(LoginValidation.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at E2EProjectCopy.CalendarAppCopy.LoginValidation.invokingLoginPage(LoginValidation.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -263,7 +251,7 @@ Session ID: bc7dffe18628372a7a4a36a34587cd4e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/3z/f2jc2dfn3xxd0615wbb7gwl80000gn/T/testng-eclipse-604183332/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/3z/f2jc2dfn3xxd0615wbb7gwl80000gn/T/testng-eclipse-445335724/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -316,16 +304,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invokingLoginPage')
 data.setCell(0, 2, 'E2EProjectCopy.CalendarAppCopy.LoginValidation')
-data.setCell(0, 3, 8865);
+data.setCell(0, 3, 5225);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'invokingLoginPage')
 data.setCell(1, 2, 'E2EProjectCopy.CalendarAppCopy.LoginValidation')
-data.setCell(1, 3, 7746);
+data.setCell(1, 3, 2745);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -362,11 +350,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invokingLoginPage(akhilbingi64679@gmail.com, Matrix@32164)</span>
-                <span class="method-start">8871 ms</span>
+                <span class="method-start">5240 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">16625 ms</span>
+                <span class="method-start">8001 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
