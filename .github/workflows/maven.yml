@@ -22,8 +22,8 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
         
-    - name: chrome driver install
-    - uses: actions/checkout@v2
+    
+    
     - uses: nanasess/setup-chromedriver@master
       with:
     
