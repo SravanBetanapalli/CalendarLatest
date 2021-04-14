@@ -17,7 +17,11 @@ public class TestUtil {
 	public static final String value = "/Users/bingis/Downloads/chromedriver";
 
 	public static long Page_Load_TimeOut = 10;
-	public static String TestData_Sheet_Path = "/Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/testData/LoginDetails.xlsx";
+	public static String TestData_Sheet_Path = System.getProperty("user.dir")
+			+ "/src/main/java/testData/LoginDetails.xlsx";
+
+	// public static String TestData_Sheet_Path =
+	// "/Users/bingis/eclipse-workspace/CalendarAppCopy/src/main/java/testData/LoginDetails.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
