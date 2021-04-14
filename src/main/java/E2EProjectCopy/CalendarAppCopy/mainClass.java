@@ -35,7 +35,7 @@ public class mainClass {
 		System.out.println(browsername);
 		if (browsername.equals("chrome")) {
 			
-			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
 			System.out.println("The execution enetered for chrome method");
 			ChromeOptions options = new ChromeOptions();
 			System.out.println("The execution enetered after chrome options object");
