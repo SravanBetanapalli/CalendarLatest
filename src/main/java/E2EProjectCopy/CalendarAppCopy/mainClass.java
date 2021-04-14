@@ -24,7 +24,7 @@ public class mainClass {
 	public Properties prop;
 
 	public WebDriver initialize() throws IOException {
-
+                System.out.println("The execution enetered inside driver initialize class page");
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
 
