@@ -95,7 +95,9 @@ public class LoginValidation extends mainClass {
 	@AfterTest
 	public void aftertest() {
 		// close the browser after execution of test
+	        System.out.println("The test complete");
 		driver.close();
+
 	}
 
 }
