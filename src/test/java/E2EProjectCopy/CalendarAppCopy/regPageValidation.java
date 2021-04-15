@@ -24,14 +24,10 @@ public class regPageValidation extends mainClass {
 			throws IOException, InterruptedException
 
 	{
-		System.out.println("The execution enetered inside invoking reg page");
 		driver = initialize();
-		System.out.println("The execution enetered outside driver class page");
-		
 		invokeURLfromtextfile i = new invokeURLfromtextfile();
 		driver.get(i.geturl());
-
-		registrationPage reg = new registrationPage(driver);
+                registrationPage reg = new registrationPage(driver);
 		reg.EnterRegPage().click();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		reg.getEmail().sendKeys(emailid);
