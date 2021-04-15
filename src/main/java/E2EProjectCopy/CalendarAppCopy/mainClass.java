@@ -46,6 +46,8 @@ public class mainClass {
 				options.addArguments("headless");
 
 			}
+			System.out.println("The execution enetered before headless");
+			options.addArguments("headless");
 			driver = new ChromeDriver(options);
 			System.out.println("The execution enetered after driver chromedriver ");
 		}
