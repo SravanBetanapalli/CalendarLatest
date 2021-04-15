@@ -45,8 +45,7 @@ public class LoginValidation extends mainClass {
 		driver.get(i.geturl());
 		loginPage log = new loginPage(driver);
 		log.enterLoginPage().click();
-
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		log.lemail().sendKeys(Username);
 		log.lpassword().sendKeys(password);
 		log.lbutton().click();
