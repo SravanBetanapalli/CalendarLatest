@@ -34,10 +34,13 @@ public class mainClass {
 		// taking the browser value from jenkins jon
 		System.out.println(browsername);
 		if (browsername.equals("chrome")) {
-			
-			System.setProperty("webdriver.chrome.driver", "src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
 			System.out.println("The execution enetered for chrome method");
 			ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--no-sandbox");
+                        options.addArguments("--disable-dev-shm-usage");
+                        options.addArguments("--headless");
 			System.out.println("The execution enetered after chrome options object");
 			// Headless method will not invoke the browser but execution will be done at the
 			// back
@@ -46,9 +49,8 @@ public class mainClass {
 				options.addArguments("headless");
 
 			}
-			System.out.println("The execution enetered before headless");
-			options.addArguments("headless");
-			driver = new ChromeDriver();
+			
+			driver = new ChromeDriver(options);
 			System.out.println("The execution enetered after driver chromedriver ");
 		}
 
