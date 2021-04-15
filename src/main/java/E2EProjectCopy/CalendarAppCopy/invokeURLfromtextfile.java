@@ -15,7 +15,7 @@ public class invokeURLfromtextfile extends mainClass {
 		// TODO Auto-generated method stub
 		System.out.println("The execution entered inside invokefrom url class");
 		FileInputStream fis = new FileInputStream(
-				"/Users/bingis/eclipse-workspace/calenderApp/src/main/java/E2EProject/calenderApp/Data.properties");
+				System.getProperty("user.dir") + "/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
 		prop = new Properties();
 		prop.load(fis);
 		
