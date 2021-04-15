@@ -24,34 +24,31 @@ public class mainClass {
 	public Properties prop;
 
 	public WebDriver initialize() throws IOException {
-                System.out.println("The execution enetered inside driver initialize class page");
+          
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/java/E2EProjectCopy/CalendarAppCopy/Data.properties");
 
 		prop = new Properties();
 		prop.load(fis);
 		String browsername = prop.getProperty("browser");
-		// taking the browser value from jenkins jon
 		System.out.println(browsername);
 		if (browsername.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			//System.setProperty("webdriver.chrome.driver", "src/main/java/E2EProjectCopy/CalendarAppCopy/chromedriver");
-			System.out.println("The execution enetered for chrome method");
-			ChromeOptions options = new ChromeOptions();
+		        ChromeOptions options = new ChromeOptions();
                         options.addArguments("--no-sandbox");
                         options.addArguments("--disable-dev-shm-usage");
                         options.addArguments("--headless");
-			System.out.println("The execution enetered after chrome options object");
+			
 			// Headless method will not invoke the browser but execution will be done at the
 			// back
 			if (browsername.contains("headless")) {
-				System.out.println("The execution enetered before headless");
+				
 				options.addArguments("headless");
 
 			}
 			
 			driver = new ChromeDriver(options);
-			System.out.println("The execution enetered after driver chromedriver ");
+			
 		}
 
 		else if (browsername.equals("firefox")) {
