@@ -40,13 +40,10 @@ public class LoginValidation extends mainClass {
 	public void invokingLoginPage(String Username, String password) throws IOException, InterruptedException
 
 	{
-		System.out.println("The main class file execution is entered");
+		
 		driver = initialize();
-		System.out.println("The main class file execution is completed");
 		invokeURLfromtextfile i = new invokeURLfromtextfile();
-		System.out.println("The main invocation file execution is completed");
-		driver.get(i.geturl());
-		System.out.println("The url is :"+i.geturl());
+                driver.get(i.geturl());
 		loginPage log = new loginPage(driver);
 		log.enterLoginPage().click();
                 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
