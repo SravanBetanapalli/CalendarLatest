@@ -38,7 +38,10 @@ public class regPageValidation extends mainClass {
 		reg.Submit().click();
 		// cust_url is the url of the login user at that instance
 		String cust_url = i.geturl() + "/calendar/" + Username;
+		System.out.println(cust_url);
 		String curl_url = driver.getCurrentUrl();
+		System.out.println(curl_url);
+		
 
 		// according to functonality the user is logging after functionality so
 		// validating the url
