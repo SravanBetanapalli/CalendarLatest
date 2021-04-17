@@ -38,8 +38,8 @@ public class regPageValidation extends mainClass {
 		reg.getpassword().sendKeys(password);
 		reg.getAvatar().sendKeys(URL);
 		reg.Submit().click();
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='temperature']")));
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='temperature']")));
 		// cust_url is the url of the login user at that instance
 		String cust_url = i.geturl() + "calendar/" + Username;
 		System.out.println(cust_url);
