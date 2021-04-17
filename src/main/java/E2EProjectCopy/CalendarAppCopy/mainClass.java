@@ -41,11 +41,11 @@ public class mainClass {
 			
 			// Headless method will not invoke the browser but execution will be done at the
 			// back
-			if (browsername.contains("headless")) {
+			/*if (browsername.contains("headless")) {
 				
 				options.addArguments("headless");
 
-			}
+			}*/
 			
 			driver = new ChromeDriver(options);
 			
