@@ -46,6 +46,7 @@ public class LoginValidation extends mainClass {
 		invokeURLfromtextfile i = new invokeURLfromtextfile();
 		System.out.println("The main invocation file execution is completed");
 		driver.get(i.geturl());
+		System.out.println("The url is :"+i.geturl());
 		loginPage log = new loginPage(driver);
 		log.enterLoginPage().click();
                 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
