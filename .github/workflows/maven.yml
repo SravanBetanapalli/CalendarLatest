@@ -26,6 +26,9 @@ jobs:
       run: |
        chmod +x ./InstallChrome.sh
         ./InstallChrome.sh
+        
+    - name: Installing Git 
+      run: apt-get install -y git
     
     
     - uses: nanasess/setup-chromedriver@master
@@ -38,6 +41,9 @@ jobs:
           sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
     - name: Build with Maven
       run: mvn -B clean compile test --file pom.xml
+    
+    
+
       
       
   
