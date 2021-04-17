@@ -26,10 +26,6 @@ jobs:
       run: |
        chmod +x ./InstallChrome.sh
         ./InstallChrome.sh
-        
-    - name: Installing Git 
-      run: apt-get install -y git
-    
     
     - uses: nanasess/setup-chromedriver@master
       with:
