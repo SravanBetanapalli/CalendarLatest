@@ -21,6 +21,13 @@ jobs:
       with:
         java-version: '8'
         distribution: 'adopt'
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        check-latest: true
+    - run: npm install
+    - run: npm test
         
     - name: Install Google Chrome # Using shell script to install Google Chrome
       run: |
