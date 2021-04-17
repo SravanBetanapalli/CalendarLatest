@@ -25,11 +25,11 @@ public class regPageValidation extends mainClass {
 
 	{
 		driver = initialize();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		invokeURLfromtextfile i = new invokeURLfromtextfile();
 		driver.get(i.geturl());
                 registrationPage reg = new registrationPage(driver);
 		reg.EnterRegPage().click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		reg.getEmail().sendKeys(emailid);
 		reg.getName().sendKeys(Name);
 		reg.getUsernme().sendKeys(Username);
