@@ -1,6 +1,7 @@
 package E2EProjectCopy.CalendarAppCopy;
 
 import java.io.IOException;
+import org.openqa.selenium.By;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
