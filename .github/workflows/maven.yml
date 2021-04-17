@@ -23,7 +23,7 @@ jobs:
         distribution: 'adopt'
     - name: Install git
       run: |
-         brew install git
+         sudo apt-get install git
   
     
         
