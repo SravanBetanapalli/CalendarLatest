@@ -32,14 +32,14 @@ public class regPageValidation extends mainClass {
 		driver.get(i.geturl());
                 registrationPage reg = new registrationPage(driver);
 		reg.EnterRegPage().click();
+		Thread.sleep(2000L);
 		reg.getEmail().sendKeys(emailid);
 		reg.getName().sendKeys(Name);
 		reg.getUsernme().sendKeys(Username);
 		reg.getpassword().sendKeys(password);
 		reg.getAvatar().sendKeys(URL);
 		reg.Submit().click();
-		//WebDriverWait wait = new WebDriverWait(driver, 30);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='temperature']")));
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// cust_url is the url of the login user at that instance
 		String cust_url = i.geturl() + "calendar/" + Username;
 		System.out.println(cust_url);
